@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Tahoma;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #222;
+  padding: 20px 0;
+  height: 100vh;
+  background: url('https://ic.pics.livejournal.com/zdorovs/16627846/1683764/1683764_original.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header .header-wrapper .logo {
+  flex: 0 0 100px;
+  display: flex;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+header nav ul li a {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  color: #c2c2c2;
+}
+
+header .btn-in {
+  border: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+header .btn-in img {
+  width: 25px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  margin-right: 5px;
+}
+
+header .btn-in:hover {
+  border: 1px solid #c2c2c2;
+  color: #C2c2c2;
+}
+
+header .title {
+  text-align: center;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .title h2 {
+  font-size: 30px;
+  color: #c2c2c2;
+}
+
+header .title h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+  background: transparent;
+  width: max-content;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #c2c2c2;
+  color: #C2c2c2;
+}
+
+header .title button {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.about {
+  height: 100vh;
+  background: url('https://view-photo.ru/wp-content/uploads/2016/05/DSC08438.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.line {
+  height: 10px;
+  width: 100%;
+  background: orange;
+}
+
+.about .about-content {
+  width: 50%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.about .about-content h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about .about-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.auth-modal-wrap {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal-wrap .auth-modal {
+  width: 550px;
+  background: #fff;
+  min-height: 250px;
+  position: relative;
+}
+
+.close {
+  display: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.modal-close:hover {
+  color: #C2c2c2;
+}
+
+.auth-modal-wrap .auth-modal form {
+  margin: 50px;
+}
+
+.auth-modal-wrap .auth-modal form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.auth-modal-wrap .auth-modal form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-auth,
+.btn-registry {
+  color: #000;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+.auth-modal-wrap .auth-modal form .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #333;
+  padding: 30px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy {
+  color: #fff;
+}
